@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CITEC Curriculum Website Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fixed Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm" style="border-bottom: 4px solid #FFD400;">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-[#FFD400] rounded-lg flex items-center justify-center">
+            <svg class="w-7 h-7 text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-[#2B2B2B] tracking-tight font-bold text-xl">CITEC</div>
+            <div class="text-xs text-[#2B2B2B]/60">Curriculum Portal</div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#capstone" class="nav-link px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Capstone</a>
+          <a href="#courses" class="nav-link px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Courses</a>
+          <a href="#prerequisites" class="nav-link px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Prerequisites</a>
+          <a href="#policies" class="nav-link px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Policies</a>
+          <a href="#contact" class="nav-link px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Contact</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-[#2B2B2B]">
+          <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu md:hidden pb-4">
+        <div class="space-y-2">
+          <a href="#capstone" class="mobile-nav-link block w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Capstone</a>
+          <a href="#courses" class="mobile-nav-link block w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Courses</a>
+          <a href="#prerequisites" class="mobile-nav-link block w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Prerequisites</a>
+          <a href="#policies" class="mobile-nav-link block w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Policies</a>
+          <a href="#contact" class="mobile-nav-link block w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2B2B2B] hover:bg-[#F5F5F5]">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="pt-32 pb-20 px-4 lg:px-8 relative overflow-hidden" style="background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-[#FFD400] opacity-10 transform skew-x-12 translate-x-1/2"></div>
+    <div class="container mx-auto relative z-10">
+      <div class="max-w-4xl">
+        <div class="inline-block px-4 py-2 bg-[#FFD400] rounded-full mb-6">
+          <span class="text-[#2B2B2B]">College of Information Technology & Engineering</span>
+        </div>
+        <h1 class="text-[#2B2B2B] mb-6">CITEC Curriculum Overview</h1>
+        <h3 class="text-[#2B2B2B]/70 mb-8">Empowering Future Innovators in Technology and Engineering.</h3>
+        <p class="text-lg text-[#2B2B2B]/80 mb-10 max-w-2xl">
+          The CITEC curriculum is designed to prepare students for successful careers in the rapidly evolving fields of 
+          information technology and engineering. Our comprehensive program combines theoretical foundations with 
+          practical applications, ensuring graduates are industry-ready and equipped with cutting-edge skills.
+        </p>
+        <a href="#courses" class="inline-block bg-[#FFD400] text-[#2B2B2B] hover:bg-[#FFD400]/90 px-8 py-3 rounded-lg font-medium transition-colors">
+          View Curriculum
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capstone Section -->
+  <section id="capstone" class="py-20 px-4 lg:px-8 bg-[#F5F5F5]">
+    <div class="container mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-[#FFD400] rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+          </svg>
+        </div>
+        <h2 class="text-[#2B2B2B]">Capstone Project Requirements</h2>
+      </div>
+      <p class="text-lg text-[#2B2B2B]/70 mb-12 max-w-3xl">
+        The Capstone Project is the culmination of your academic journey, where you'll apply everything you've learned 
+        to solve real-world problems and demonstrate your expertise in your chosen field.
+      </p>
+
+      <div class="bg-[#FFD400] rounded-xl p-8 mb-12 max-w-3xl" style="border: 4px solid #2B2B2B;">
+        <div class="flex items-start gap-4">
+          <svg class="w-8 h-8 text-[#2B2B2B] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <div>
+            <h4 class="text-[#2B2B2B] mb-2">Minimum Grade Requirement</h4>
+            <p class="text-[#2B2B2B]/80">
+              Students must maintain a grade of <strong>2.5 or above</strong> in prerequisite courses to qualify 
+              for the Capstone Project. This ensures you have the necessary foundation to succeed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6" style="border: 2px solid #E0E0E0;">
+          <div class="w-12 h-12 bg-[#2B2B2B] rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-[#FFD400]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h4 class="text-[#2B2B2B] mb-3">Proposal Submission</h4>
+          <ul class="space-y-2 text-[#2B2B2B]/70">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Project proposal with clear objectives</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Literature review and methodology</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Timeline and resource planning</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl p-6" style="border: 2px solid #E0E0E0;">
+          <div class="w-12 h-12 bg-[#2B2B2B] rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-[#FFD400]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h4 class="text-[#2B2B2B] mb-3">Progress Reports</h4>
+          <ul class="space-y-2 text-[#2B2B2B]/70">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Monthly progress updates</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Mid-semester presentation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Advisor consultations</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl p-6" style="border: 2px solid #E0E0E0;">
+          <div class="w-12 h-12 bg-[#2B2B2B] rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-[#FFD400]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+            </svg>
+          </div>
+          <h4 class="text-[#2B2B2B] mb-3">Final Defense & Documentation</h4>
+          <ul class="space-y-2 text-[#2B2B2B]/70">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Complete project documentation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Oral defense presentation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-[#FFD400] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Working prototype or implementation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-20 px-4 lg:px-8 bg-white">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-[#FFD400] rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-[#2B2B2B]">Course Subjects</h2>
+            <div class="h-1 w-32 bg-[#FFD400] mt-2"></div>
+          </div>
+        </div>
+        
+        <button id="program-select-btn" class="bg-[#2B2B2B] text-white hover:bg-[#2B2B2B]/90 px-4 py-2 rounded-lg transition-colors">
+          <span class="mr-2">Viewing:</span>
+          <span id="current-program" class="px-3 py-1 bg-[#FFD400] text-[#2B2B2B] rounded-full">Multi-Media Arts</span>
+        </button>
+      </div>
+      
+      <p id="program-description" class="text-lg text-[#2B2B2B]/70 mb-12 max-w-3xl">
+        The Multi-Media Arts curriculum combines creative design, digital arts, and multimedia production across four years of comprehensive study.
+      </p>
+
+      <div id="courses-container"></div>
+    </div>
+  </section>
+
+  <!-- Program Selection Modal -->
+  <div id="program-modal" class="modal">
+    <div class="modal-content">
+      <div class="p-6">
+        <div class="mb-4">
+          <h3 class="text-[#2B2B2B] mb-2">Select Program Curriculum</h3>
+          <p class="text-sm text-[#2B2B2B]/70">Choose which curriculum you'd like to view. You can switch between programs at any time.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <button class="program-option w-full p-6 rounded-xl text-left transition-all hover:shadow-lg" style="border: 2px solid #E0E0E0;" data-program="MMA">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-[#FFD400] rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 112.828 2.828l-8.486 8.486L3 19l.707-2.828 8.486-8.486z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-[#2B2B2B] mb-1">Multi-Media Arts</h4>
+                <p class="text-sm text-[#2B2B2B]/70">Creative design, digital arts, and multimedia production</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="program-option w-full p-6 rounded-xl text-left transition-all hover:shadow-lg" style="border: 2px solid #E0E0E0;" data-program="IT">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-[#FFD400] rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-[#2B2B2B] mb-1">Information Technology</h4>
+                <p class="text-sm text-[#2B2B2B]/70">Software development, systems administration, and IT solutions</p>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <button id="close-modal-btn" class="mt-6 w-full px-4 py-2 bg-[#E0E0E0] text-[#2B2B2B] rounded-lg hover:bg-[#E0E0E0]/80 transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include other sections -->
+  <div id="prerequisites-section"></div>
+  <div id="policies-section"></div>
+  <div id="contact-section"></div>
+
+  <script src="courseData.js"></script>
+  <script src="script.js"></script>
+  <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+  <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmhcp7jq6000f128l5q8v4nl1'></zapier-interfaces-chatbot-embed>
+ 
+</body>
+</html>
